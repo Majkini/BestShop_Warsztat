@@ -376,6 +376,12 @@ h2 {
   width: 1352px;
   margin: 0 auto;
 }
+@media (max-width: 1352px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 
 /*HEADER*/
 .header {
@@ -383,14 +389,12 @@ h2 {
   height: 70px;
   z-index: 10;
 }
-
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-
 .header__logo {
   padding: 16px 0;
   font-family: "Raleway", sans-serif;
@@ -398,14 +402,17 @@ h2 {
   color: #08A6E4;
   font-weight: 300;
 }
-
-.header__nav {
-  display: flex;
-  list-style: none;
-  align-items: center;
+.header .nav__element {
+  padding: 0 26px;
 }
-
-.nav__link {
+.header .nav__element:last-child {
+  padding-right: 0;
+}
+.header .nav__link:hover {
+  border-bottom: 4px solid #08A6E4;
+  color: #000000;
+}
+.header .nav__link {
   text-transform: uppercase;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -417,17 +424,64 @@ h2 {
   padding: 24px 18px 22px;
   text-decoration: none;
 }
-
-.nav__text {
-  padding: 0 26px;
+.header__nav {
+  display: flex;
+  list-style: none;
 }
-
-.nav__text:last-child {
-  padding-right: 0;
+@media (max-width: 792px) {
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 94px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-bottom: 20px;
+    display: none;
+  }
+  .header__nav .nav__element {
+    padding: 0;
+  }
+  .header__nav .nav__link {
+    display: inline-block;
+    padding: 14px 20px;
+    margin: 0 auto;
+  }
 }
-
-.nav__link:hover {
-  border-bottom: 4px solid #08A6E4;
-  color: #000000;
+.header .menu__btn {
+  display: none;
+}
+@media (max-width: 792px) {
+  .header .menu__btn:checked ~ .header__nav {
+    display: flex;
+  }
+  .header .menu__btn:checked ~ .menu__burger span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 5px);
+  }
+  .header .menu__btn:checked ~ .menu__burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .header .menu__btn:checked ~ .menu__burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -5px);
+  }
+}
+.header .menu__burger {
+  display: none;
+}
+.header .menu__burger span {
+  width: 20px;
+  height: 2px;
+  display: block;
+  margin-bottom: 3px;
+  background-color: #08A6E4;
+  transition: all 0.3s linear;
+}
+.header .menu__burger span:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 792px) {
+  .header .menu__burger {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
