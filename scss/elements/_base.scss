@@ -3,7 +3,7 @@
 }
 
 body {
-  //font-family: $font-open-sans;
+  font-family: $font-open-sans;
 }
 
 a {
@@ -11,7 +11,7 @@ a {
 }
 
 h2 {
-  //font-family: $font-raleway;
+  font-family: $font-raleway;
   font-size: 2.25rem;
 }
 
@@ -24,4 +24,3 @@ h2 {
     padding: 0 15px;
   }
 }
-@import "../settings/fonts";

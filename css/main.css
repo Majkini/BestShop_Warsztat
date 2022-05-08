@@ -364,11 +364,16 @@ textarea {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
 
 h2 {
+  font-family: "Raleway", sans-serif;
   font-size: 2.25rem;
 }
 
@@ -381,6 +386,37 @@ h2 {
     width: 100%;
     padding: 0 15px;
   }
+}
+
+.btn {
+  color: #FFFFFF;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 65px;
+  border-radius: 40px;
+  border: none;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.btn--primary {
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn--large {
+  padding: 22px 157px;
+  font-size: 1rem;
+}
+
+.btn--red {
+  background-color: #FB3B64;
+}
+
+.btn--green {
+  background-color: #55DFB4;
 }
 
 /*HEADER*/
@@ -432,7 +468,7 @@ h2 {
   .header__nav {
     position: absolute;
     left: 0;
-    top: 94px;
+    top: 90px;
     flex-direction: column;
     background-color: #FFFFFF;
     width: 100%;
@@ -482,6 +518,60 @@ h2 {
 @media (max-width: 792px) {
   .header .menu__burger {
     display: inline-block;
+  }
+}
+
+/*OPENING SECTION*/
+.opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.opening__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 130px;
+}
+@media (max-width: 792px) {
+  .opening__container {
+    margin-top: 95px;
+    width: 100%;
+  }
+}
+.opening__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 49px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+@media (max-width: 792px) {
+  .opening__title {
+    padding: 0 70px;
+  }
+}
+.opening__text {
+  margin-bottom: 38px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+.opening__img {
+  height: auto;
+  width: 100%;
+}
+@media (max-width: 792px) {
+  .opening__img {
+    width: 220%;
+  }
+}
+@media (max-width: 792px) {
+  .opening .btn {
+    margin: 0 15px;
+    padding: 16px 0;
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
