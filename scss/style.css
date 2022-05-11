@@ -1,164 +1,5 @@
 
 
-
-
-
-
-
-
-/*BENEFITS*/
-.benefits {
-    background-color: var($color-light-grey);
-    padding: 106px 0;
-}
-
-.benefits__container {
-    padding: 0 100px;
-}
-
-.benefits__single {
-    display: flex;
-    background-color: var($color-white);
-    justify-content: space-between;
-    align-items: flex-end;
-    border: solid 1px #E8E9ED;
-    border-radius: 5px;
-    margin-bottom: 37px;
-
-}
-
-.benefits__single--macbook {
-    --accent-color: var($color-redish)
-}
-
-.benefits__text {
-    width: 416px;
-    margin: 91px 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.benefits__text::after {
-    content: "";
-    width: 337px;
-    height: 4px;
-    display: block;
-    margin-top: 50px;
-    background-color: var($accent-color);
-}
-
-.benefits__title {
-    margin-bottom: 30px;
-    font-family: var($font-raleway);
-    font-size: 36px;
-    font-weight: normal;
-    color: var($color-black);
-    text-align: left;
-}
-
-.benefits__paragraph {
-    text-align: left;
-    font-family: var($font-open-sans);
-    font-weight: normal;
-    font-size: 16px;
-    color: var($color-black);
-    line-height: 22px;
-
-}
-
-.benefits__img--macbook {
-    margin-right: 117px;
-    margin-bottom: 38px;
-    position: relative;
-}
-
-.img__macbook {
-    width: 368px;
-    height: auto;
-    z-index: 2;
-    position: relative;
-}
-
-.benefits__img--macbook::before {
-    content: "";
-    width: 179px;
-    height: 179px;
-    border-radius: 41px;
-    position: absolute;
-    background-color: var($accent-color);
-    transform: rotate(45deg);
-    top: -40px;
-    right: 0;
-
-}
-
-.benefits__single--phone {
-    align-items: flex-end;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    --accent-color: var($color-primary)
-}
-
-.benefits__single--phone .benefits__text {
-    margin: 70px 20px 70px 0;
-}
-
-.benefits__img--phone {
-    margin-bottom: 13px;
-    margin-left: 70px;
-    position: relative;
-}
-
-.img__phone {
-    width: 426px;
-    height: 328px;
-    z-index: 2;
-    position: relative;
-}
-
-.benefits__img--phone::before {
-    content: "";
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: var($accent-color);
-    top: -20px;
-    left: 0;
-
-}
-
-.benefits__divided {
-    display: flex;
-    justify-content: space-between;
-    --accent-color: var($color-green);
-}
-
-.benefits__single--trumpet {
-    width: 620px;
-}
-
-.benefits__img--trumpet {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var($accent-color);
-    border: none;
-    margin-left: 60px;
-}
-
-.img__trumpet {
-    width: 295px;
-    height: 207px;
-    margin-top: 50px;
-}
-
-.benefits__single--trumpet .benefits__text {
-    width: 100%;
-}
-
 /*PRICING*/
 
 .pricing {
@@ -171,10 +12,10 @@
 }
 
 .pricing__title {
-    font-family: var($font-raleway);
+    font-family: var($ font-raleway);
     font-size: 36px;
     font-weight: normal;
-    color: var($color-black);
+    color: var($ color-black);
 }
 
 .pricing__columns {
@@ -187,7 +28,7 @@
 .pricing__column {
     width: 372px;
     text-align: center;
-    border: 1px solid var($accent-color);
+    border: 1px solid var($ accent-color);
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -211,15 +52,15 @@
 
 
 .pricing__type {
-    font-family: var($font-raleway);
+    font-family: var($ font-raleway);
     font-size: 20px;
     color: #13253B;
     font-weight: bold;
 }
 
 .pricing__price {
-    color: var($accent-color);
-    font-family: var($font-open-sans);
+    color: var($ accent-color);
+    font-family: var($ font-open-sans);
     font-size: 46px;
     font-weight: 300;
     margin-top: 14px;
@@ -227,7 +68,7 @@
 }
 
 .pricing__limited {
-    font-family: var($font-raleway);
+    font-family: var($ font-raleway);
     font-size: 12px;
     font-weight: bold;
     color: #13253B;
@@ -257,15 +98,15 @@
 
 /*BASIC*/
 .pricing__column--basic {
-    --accent-color: var($color-redish);
+    --accent-color: var($ color-redish);
 }
 
 /*PROFESSIONAL*/
 
 .pricing__column--professional {
     width: 405px;
-    --accent-color: var($color-primary);
-    box-shadow: 5px 10px 27px var($color-primary-shadow);
+    --accent-color: var($ color-primary);
+    box-shadow: 5px 10px 27px var($ color-primary-shadow);
 }
 
 .pricing__column--professional .pricing__item {
@@ -279,7 +120,7 @@
 
 /*PREMIUM*/
 .pricing__column--premium {
-    --accent-color: var($color-green);
+    --accent-color: var($ color-green);
 }
 
 /*CONTACT SECTION*/
@@ -298,8 +139,8 @@
 
 .contact__title {
     font-size: 49px;
-    font-family: var($font-raleway);
-    color: var($color-black);
+    font-family: var($ font-raleway);
+    color: var($ color-black);
     margin-bottom: 22px;
     font-weight: normal;
 }
@@ -307,7 +148,7 @@
 .contact__text {
     margin-bottom: 42px;
     font-size: 16px;
-    font-family: var($font-open-sans);
+    font-family: var($ font-open-sans);
     font-weight: normal;
 }
 
@@ -318,9 +159,9 @@
 .contact__details__item {
     text-decoration: none;
     font-weight: 600;
-    font-family: var($font-open-sans);
+    font-family: var($ font-open-sans);
     font-size: 16px;
-    color: var($color-grey);
+    color: var($ color-grey);
 }
 
 .contact__details__item:first-child {
@@ -349,16 +190,16 @@
     font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var($color-primary);
+    color: var($ color-primary);
     font-weight: bold;
-    font-family: var($font-open-sans);
+    font-family: var($ font-open-sans);
     margin-bottom: 3px;
 
 }
 
 .input__email, .input__name {
     border: none;
-    border-bottom: 1px solid var($color-grey);
+    border-bottom: 1px solid var($ color-grey);
     padding: 10px 0;
 
 }
@@ -366,7 +207,7 @@
 .contact__column .btn {
     align-self: flex-end;
     font-size: 13px;
-    font-family: var($font-open-sans);
+    font-family: var($ font-open-sans);
     font-weight: bold;
     padding: 20px 97px;
     margin-top: 20px;
@@ -375,7 +216,7 @@
 .checkbox {
     display: flex;
     cursor: pointer;
-    font-family: var($font-open-sans);
+    font-family: var($ font-open-sans);
     font-size: 12px;
     line-height: 17px;
     color: #707070;
@@ -423,10 +264,11 @@
 
 .footer__text {
     margin-bottom: 20px;
-    font-family: var($font-open-sans);
-    color: var($color-grey);
+    font-family: var($ font-open-sans);
+    color: var($ color-grey);
 
 }
-.footer__wrapper img:last-child{
+
+.footer__wrapper img:last-child {
     margin-left: 20px;
 }
