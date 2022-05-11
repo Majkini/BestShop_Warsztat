@@ -672,7 +672,7 @@ h2 {
 }
 @media (max-width: 1024px) {
   .benefits {
-    padding: 50px;
+    padding: 50px 0;
   }
 }
 .benefits__container {
@@ -743,7 +743,6 @@ h2 {
   }
 }
 .benefits__single--phone {
-  align-items: flex-end;
   justify-content: space-between;
   flex-direction: row-reverse;
   --accent-color: #08A6E4;
@@ -751,16 +750,32 @@ h2 {
 .benefits__single--phone .benefits__text {
   margin: 70px 20px 70px 0;
 }
+@media (max-width: 1024px) {
+  .benefits__single--phone .benefits__text {
+    margin: 30px 0;
+  }
+}
 .benefits__single--phone .benefits__img {
   margin-bottom: 13px;
   margin-left: 70px;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .benefits__single--phone .benefits__img {
+    margin-top: 30px;
+  }
 }
 .benefits__single--phone .benefits__img .img__phone {
   width: 426px;
   height: 328px;
   z-index: 2;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .benefits__single--phone .benefits__img .img__phone {
+    width: 175px;
+    height: auto;
+  }
 }
 .benefits__single--phone .benefits__img::before {
   content: "";
@@ -772,15 +787,32 @@ h2 {
   top: -20px;
   left: 0;
 }
+@media (max-width: 1024px) {
+  .benefits__single--phone .benefits__img::before {
+    width: 131px;
+    height: 131px;
+  }
+}
 .benefits__divided {
   display: flex;
   justify-content: space-between;
   --accent-color: #55DFB4;
 }
-.benefits__single--trumpet {
+@media (max-width: 1024px) {
+  .benefits__divided {
+    flex-direction: column;
+  }
+}
+.benefits__divided .benefits__single--trumpet {
   width: 620px;
 }
-.benefits__img--trumpet {
+@media (max-width: 1024px) {
+  .benefits__divided .benefits__single--trumpet {
+    margin: 0;
+    width: 100%;
+  }
+}
+.benefits__divided .benefits__img--trumpet {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -789,12 +821,17 @@ h2 {
   border: none;
   margin-left: 60px;
 }
-.benefits .img__trumpet {
+@media (max-width: 1024px) {
+  .benefits__divided .benefits__img--trumpet {
+    margin: 0;
+  }
+}
+.benefits__divided .img__trumpet {
   width: 295px;
   height: 207px;
   margin-top: 50px;
 }
-.benefits__single--trumpet .benefits__text {
+.benefits__divided__single--trumpet .benefits__text {
   width: 100%;
 }
 .benefits__text {
@@ -807,6 +844,7 @@ h2 {
 @media (max-width: 1024px) {
   .benefits__text {
     margin: 30px 0;
+    width: 100%;
   }
 }
 .benefits__text::after {
@@ -816,6 +854,11 @@ h2 {
   display: block;
   margin-top: 50px;
   background-color: var(--accent-color);
+}
+@media (max-width: 1024px) {
+  .benefits__text::after {
+    display: none;
+  }
 }
 .benefits__title {
   margin-bottom: 30px;
