@@ -1,0 +1,167 @@
+
+.pricing {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+@include largescreen{
+  margin: 50px auto;
+}
+
+  &__title {
+    font-family: $font-raleway;
+    font-size: 36px;
+    font-weight: normal;
+    color: $color-black;
+  }
+
+  &__columns {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    @include largescreen{
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__column {
+    width: 372px;
+    text-align: center;
+    border: 1px solid var(--accent-color);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+    @include largescreen{
+      width: 100%;
+      max-width: 372px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      justify-content: center;
+      padding: 25px 10px 0 10px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      @include largescreen{
+        margin-bottom: 0;
+        margin-right: 60px;
+      }
+    }
+
+    .btn {
+      position: relative;
+      bottom: -25px;
+    }
+
+    /*BASIC*/
+    &--basic {
+      --accent-color: #{$color-redish};
+    }
+
+    /*PROFESSIONAL*/
+
+    &--professional {
+      width: 405px;
+      --accent-color: #{$color-primary};
+      box-shadow: 5px 10px 27px $color-primary-shadow;
+      @include largescreen{
+
+          max-width: 400px;
+          width: 100%;
+
+        }
+
+      .pricing__price{
+        margin-top: 25px;
+      }
+      .pricing__item {
+        margin-bottom: 25px;
+      }
+
+      .pricing__package {
+        margin-top: 34px;
+        margin-bottom: 61px;
+        @include largescreen{
+          margin: 0;
+        }
+      }
+    }
+
+
+    /*PREMIUM*/
+    &--premium {
+      --accent-color: #{$color-green};
+    }
+
+  }
+
+
+  &__price {
+    color: var(--accent-color);
+    font-family: $font-open-sans;
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 14px;
+    margin-bottom: 15px;
+  }
+
+  &__limited {
+    font-family: $font-raleway;
+    font-size: 12px;
+    font-weight: bold;
+    color: #13253B;
+  }
+
+  .pricing__item {
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      height: 11px;
+      width: 11px;
+      margin-right: 10px;
+      display: inline-block;
+      background-image: url("../assets/Ckechmark-1.svg");
+    }
+
+
+  }
+
+  .pricing__redx::before {
+    background-image: url("../assets/Close.svg");
+  }
+
+  &__list {
+    margin-bottom: 25px;
+    @include largescreen{
+      width: 50%;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+
+  &__package {
+    margin-top: 34px;
+    margin-bottom: 50px;
+    @include largescreen{
+      width: 50%;
+      margin:0 ;
+    }
+  }
+
+  &__type {
+    font-family: $font-raleway;
+    font-size: 20px;
+    color: #13253B;
+    font-weight: bold;
+  }
+
+}
+
