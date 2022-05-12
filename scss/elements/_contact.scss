@@ -1,0 +1,146 @@
+/*CONTACT SECTION*/
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 55px 100px 59px;
+
+@include tablet{
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 15px;
+}
+  &__column {
+    width: 50%;
+    @include tablet{
+      width: 100%;
+    }
+
+  }
+
+  &__title {
+    font-size: 49px;
+    font-family: $font-raleway;
+    color: $color-black;
+    margin-bottom: 22px;
+    font-weight: normal;
+    @include tablet{
+      margin-bottom:15px ;
+    }
+  }
+
+  &__text {
+    margin-bottom: 42px;
+    font-size: 16px;
+    font-family: $font-open-sans;
+    font-weight: normal;
+    @include tablet{
+      margin-bottom:30px ;
+    }
+  }
+
+  &__details {
+    display: flex;
+    @include tablet{
+      flex-direction: column;
+    }
+
+    &__item {
+      text-decoration: none;
+      font-weight: 500;
+      font-family: $font-open-sans;
+      font-size: 16px;
+      color: $color-grey;
+      @include tablet{
+        margin-bottom:10px ;
+      }
+    }
+
+    &__item:first-child {
+      margin-right: 20px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+
+  /*INPUT COLUMN*/
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+      margin-top:53px ;
+    }
+  }
+
+  .input__name {
+    margin-bottom: 42px;
+
+  }
+
+  .input__email {
+    margin-bottom: 30px;
+
+  }
+
+  .input {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: bold;
+    font-family: $font-open-sans;
+    margin-bottom: 3px;
+
+
+  }
+
+  .input__email, .input__name {
+    border: none;
+    border-bottom: 1px solid $color-grey;
+    padding: 10px 0;
+
+  }
+
+  .contact__column .btn {
+    align-self: flex-end;
+    font-size: 13px;
+    font-family: $font-open-sans;
+    font-weight: bold;
+    padding: 20px 97px;
+    margin-top: 20px;
+  }
+
+  .checkbox {
+    display: flex;
+    cursor: pointer;
+    font-family: $font-open-sans;
+    font-size: 12px;
+    line-height: 17px;
+    color: #707070;
+  }
+
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkbox span {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  .checkbox input:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

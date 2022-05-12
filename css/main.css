@@ -891,7 +891,7 @@ h2 {
 }
 .pricing__title {
   font-family: "Raleway", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: normal;
   color: #000000;
 }
@@ -979,14 +979,14 @@ h2 {
 .pricing__price {
   color: var(--accent-color);
   font-family: "Open Sans", sans-serif;
-  font-size: 46px;
+  font-size: 2.875rem;
   font-weight: 300;
   margin-top: 14px;
   margin-bottom: 15px;
 }
 .pricing__limited {
   font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   color: #13253B;
 }
@@ -1026,8 +1026,145 @@ h2 {
 }
 .pricing__type {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #13253B;
   font-weight: bold;
+}
+
+/*CONTACT SECTION*/
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 55px 100px 59px;
+  /*INPUT COLUMN*/
+}
+@media (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+  }
+}
+.contact__column {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .contact__column {
+    width: 100%;
+  }
+}
+.contact__title {
+  font-size: 49px;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  margin-bottom: 22px;
+  font-weight: normal;
+}
+@media (max-width: 1024px) {
+  .contact__title {
+    margin-bottom: 15px;
+  }
+}
+.contact__text {
+  margin-bottom: 42px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+@media (max-width: 1024px) {
+  .contact__text {
+    margin-bottom: 30px;
+  }
+}
+.contact__details {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .contact__details {
+    flex-direction: column;
+  }
+}
+.contact__details__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #A5A5A5;
+}
+@media (max-width: 1024px) {
+  .contact__details__item {
+    margin-bottom: 10px;
+  }
+}
+.contact__details__item:first-child {
+  margin-right: 20px;
+}
+.contact__details img {
+  margin-right: 10px;
+}
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .contact__wrapper {
+    margin-top: 53px;
+  }
+}
+.contact .input__name {
+  margin-bottom: 42px;
+}
+.contact .input__email {
+  margin-bottom: 30px;
+}
+.contact .input {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #08A6E4;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3px;
+}
+.contact .input__email, .contact .input__name {
+  border: none;
+  border-bottom: 1px solid #A5A5A5;
+  padding: 10px 0;
+}
+.contact .contact__column .btn {
+  align-self: flex-end;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding: 20px 97px;
+  margin-top: 20px;
+}
+.contact .checkbox {
+  display: flex;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  color: #707070;
+}
+.contact .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.contact .checkbox span {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.contact .checkbox input:checked + span {
+  background-image: url("../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
