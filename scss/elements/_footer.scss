@@ -1,29 +1,28 @@
 
-
 .footer {
-    box-shadow: 0 -5px 40px #00000029;
-}
+  box-shadow: 0 -5px 40px #00000029;
 
-.footer__container {
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
 
-.logo__footer {
+  .logo__footer {
     font-size: 26px;
     margin-bottom: 7px;
     padding: 0;
     margin-top: 20px;
-}
+  }
 
-.footer__text {
+  &__text {
     margin-bottom: 20px;
-    font-family: var($ font-open-sans);
-    color: var($ color-grey);
+    font-family: $font-open-sans;
+    color: $color-grey;
 
-}
+  }
 
-.footer__wrapper img:last-child {
+  &__wrapper img:last-child {
     margin-left: 20px;
+  }
 }

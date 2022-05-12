@@ -1167,4 +1167,27 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.footer {
+  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.1607843137);
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .logo__footer {
+  font-size: 26px;
+  margin-bottom: 7px;
+  padding: 0;
+  margin-top: 20px;
+}
+.footer__text {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #A5A5A5;
+}
+.footer__wrapper img:last-child {
+  margin-left: 20px;
+}
 /*# sourceMappingURL=main.css.map */
